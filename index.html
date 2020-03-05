@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.scrolify.js"></script>
+    <script>
+      $(function() {
+        $.scrollify({
+          section: ".section-class-name",
+          sectionName: "about"
+        });
+      });
+    </script>
+    <title>Atelier</title>
+  </head>
+  <body>
+    <div class="section-class-name home" data-section-name="home">
+      <h1>Page 1 | Home</h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ab.
+      scroll for more
+      <a href="#atelier">
+        <div class="boite">
+          <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="section-class-name atelier"
+      data-section-name="atelier"
+      id="atelier"
+    >
+      <h1>Accompagnement CAO / 3D | Ateliers</h1>
+
+      <img
+        src="img/ateliers/affiche-CAO-1.jpg"
+        alt="présentation Accompagnement CAO / 3D"
+      />
+    </div>
+    <div class="section-class-name atelier" data-section-name="Atelier3">
+      <h1>Atelier Thymio | Ateliers</h1>
+
+      <img
+        src="img/ateliers/affiche-thymio-1.jpg"
+        alt="présentation Atelier Thymio"
+      />
+    </div>
+
+    <div class="section-class-name atelier" data-section-name="Atelier3">
+      <h1>Atelier café code | Ateliers</h1>
+
+      <img
+        src="img/ateliers/affich-cafe-code-1.jpg"
+        alt="présentation cafe code"
+      />
+    </div>
+  </body>
+</html>
